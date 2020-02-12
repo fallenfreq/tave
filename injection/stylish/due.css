@@ -1,0 +1,150 @@
+.priority-high-bg,
+.priority-high,
+.label-danger,
+.tile-red .details,
+#Content .stage-progress.lead li:nth-child(1) {
+	background:#f3428d !important;
+}
+
+#Content .stage-progress.lead li:nth-child(2):before {
+	border-left-color:#f3428d !important;
+}
+
+.past-due{
+	color:#f3428d !important;
+}
+
+.double-booking-warning-trigger {
+	background:#f3428d !important;
+	border:none !important;
+}
+
+/*Change Late to Due in Nav*/
+
+[href|="tasks/late"] .name {
+	font-size:0px !important;
+}
+
+[href|="tasks/late"] .name::after {
+	content:"Due";
+	font-size:13px !important;
+}
+
+#sub-menu-nav [href|="tasks/late"] .name::after {
+	font-size:12px !important;
+}
+
+/*Change Late Tasks Stats Box*/
+
+#RightNow [href|="tasks/late"] {
+font-size:0px !important;
+}
+
+#RightNow [href|="tasks/late"]::after {
+	content:"due";
+	font-size:13px !important;
+}
+
+/*Change My Late Tasks Stats Box*/
+
+#RightNow [href*="tasks/assigned"].priority-top {
+	font-size:0px !important;
+	background:#f3428d !important; 			/*<<<<<<<<<<<< CHANGE MY DUE TASKS COLOUR HERE*/
+}
+
+#RightNow [href*="tasks/assigned"].priority-top::after {
+	content:"due - mine";
+	font-size:13px !important;
+}
+
+/*Change My Late Tasks Stats Box When it's Empty*/
+
+#RightNow div:nth-of-type(7) [href*="tasks/assigned"] { /*<<<<<<<<<<<< CHANGE NUMBER OF DUE MINE BOX*/
+	font-size:0px !important;
+}
+
+#RightNow div:nth-of-type(7) [href*="tasks/assigned"]::after { /*<<<<<<<<<<<< CHANGE NUMBER OF DUE MINE BOX*/
+	content:"due - mine";
+	font-size:13px !important;
+}
+
+/*Change Configure Dashboard Late Tasks Stats To Show*/
+
+[data-obj|="showLateTasks"] .name {
+	font-size:0px;
+}
+
+[data-obj|="showLateTasks"] .name::before {
+	content:"Due tasks ";
+	font-size:14px;
+}
+
+[data-obj|="showLateTasks"] .muted {
+	font-size:14px
+}
+
+/*Change Configure Dashboard My Late Tasks Stats To Show*/
+
+[data-obj|="showMyLateTasks"] .name {
+	font-size:0px;
+}
+
+[data-obj|="showMyLateTasks"] .name::before {
+	content:"My due tasks ";
+	font-size:14px;
+}
+
+[data-obj|="showMyLateTasks"] .muted {
+	font-size:14px
+}
+
+/*Change Late Tasks in Drop Down Menu of Configure Dashboard*/
+
+[id*="showLateTasks"] {
+font-size:0px;
+}
+
+[id*="showLateTasks"]::before {
+	content:"Due tasks";
+	font-size:14px;
+}
+
+/*Change My Late Tasks in Drop Down Menu of Configure Dashboard*/
+
+[id*="showMyLateTasks"] {
+font-size:0px;
+}
+
+[id*="showMyLateTasks"]::before {
+	content:"My due tasks";
+	font-size:14px;
+}
+
+/*Colours My Tasks Counter*/
+
+.me .label {
+	background: #f3428d !important;
+	color:white;
+}
+
+/*IF THE FULL STOPS ARE ADDED THEN Add AN X ON THE URL IN NAV FULL TIME TO STOP IT WORKING*/
+
+/*Hides The All Due Tasks Notification Counter > ADD A FULL STOP >*/
+#tasksNavLink > a > .label,
+/*Hides The All Due Tasks Notification Counter*/
+
+/*Hide All Due Tasks SubMenue Counter > ADD A FULL STOP >*./
+[href|="tasks/late"] .label,
+[href|="tasks/due-soon"] .label,
+/*Hide All Due Tasks SubMenue Counter */
+
+/*Hides Other task Counter*/
+[href|="tasks/deleted"] .label,
+[href|="tasks/completed"] .label,
+[href|="tasks/unassigned"] .label,
+[href|="tasks/open"] .label,
+[href|="tasks/general"] label{
+	display:none;
+}
+
+/*CODE MOVED TO FULL TIME SMALL NAV*/

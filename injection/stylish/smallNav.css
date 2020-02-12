@@ -1,0 +1,157 @@
+/*mobile content fix*/
+
+.container-fluid {
+	width: 100%;
+}
+/*Keeps the small side navbar after a window size of 769px*/
+
+@media screen and (min-width:768px) {
+	/*Brings back live search function and hide search icon*/
+
+	.live-search {
+		display: block!important;
+		visibility: visible!important;
+	}
+	#searchNavLink {
+		Display: none;
+	}
+	/*Hides nav text*/
+
+	.cl-vnavigation li a span {
+		display: none
+	}
+	/*positions the sidebar counters*/
+
+	.cl-vnavigation li a .label {
+		display: inline-block;
+		position: absolute;
+		margin-top: -8px;
+		margin-left: -5px
+	}
+
+	/*Stops dropdowns working and hides arrows*/
+
+	.cl-vnavigation li ul {
+		display: none!important
+	}
+	.cl-vnavigation>.parent>a:before {
+		display: none
+	}
+
+	/*Sets the width of the sidebar*/
+
+	.cl-sidebar {
+		width: 80px!important;
+		flex-basis: 80px!important
+	}
+
+	/*set logo size and padding*/
+
+	.sidebar-logo {
+		padding: 4px 0 5px
+	}
+	.sidebar-logo img {
+		width: 50px;
+		height: 20px;
+		margin-top: 16px
+	}
+
+	/*centers the content of the nav*/
+
+	.sidebar-logo,
+	.cl-vnavigation li a {
+		text-align: center
+	}
+
+	/*removes padding from bottom of nav*/
+
+	#Sidebar {
+		padding-bottom: 15px;
+	}
+
+	/*stops the page scrolling to show navbar unless you hover on it*/
+
+	.cl-navblock {
+		width: 100%;
+		position: absolute;
+	}
+	.cl-navblock:hover {
+		position: relative;
+	}
+	#pcont.container-fluid {
+		overflow: hidden!important;
+	}	/*was braking help menue*/
+}
+body::-webkit-scrollbar {
+	Display: none;
+}
+
+/*Stop dropdowns going below cut off point*/
+
+.table-hover .dropdown-menu {
+	top:auto !important;
+	bottom:100% !important;
+	}
+
+/*Turns the arrow the other way*/
+
+.sales-order .caret, .ledger .caret {
+	border-top: 0px solid !important;
+	border-bottom: 4px solid !important;
+}
+
+
+/*THE CODE FROM I'M NOT LATE*/
+	/* Displays the Hidden Task Menue from the Full Size Nav */
+
+	#tasksNavLink [data-list|="Tasks"] {
+	display:block !important;
+	position:relative;
+	left:-80px;
+}
+
+/* Stops the Height from Maing a Gap Between Nav Buttons */
+
+#tasksNavLink{
+	height:41px;
+}
+
+/* Hides all the Numbers in the Newely Displayed Nav */
+
+#tasksNavLink [data-list|="Tasks"] li {
+	display:none !important;
+}
+
+/* Brings Back the Task Number for "My" Tasks */
+
+#tasksNavLink [data-list|="Tasks"] .me {
+	display:block !important;
+}
+
+/* Repositions the Number to Look Like the Other Notification Numbers */
+
+.cl-vnavigation .me .label {
+	position:absolute;
+	left:110px;
+	bottom:35px;
+	font-size:10.5px;
+}
+
+/* Prevents Hovering on the Number from Hiding the sub Menue */
+
+#tasksNavLink .me [href*="tasks/assigned"] .label {
+   pointer-events: none !important;
+}
+
+/* Hides the Number from the Top of the Task Menu as it no Longer Matches */
+
+[for|="tasksNavLink"] .dropdown-header .label {
+display:none !important;
+}
+
+/* Hides the Number from the Top of all the Menus */
+
+#sub-menu-nav .dropdown-header .label {
+	display:none !important;
+}
+	/*END OF CODE FROM I'M NOT LATE*/

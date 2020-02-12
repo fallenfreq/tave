@@ -1,0 +1,89 @@
+/* ONLY LOAD ON THIS PATH https://tave.com/app/calendar/month*/
+
+/*Resets the month calendar spacing and allows the event blocks to fill any gaps*/
+
+.fc-event-container a {
+	height: 100%;
+	border-left-width: 0px !important;
+	border-right-width: 0px !important;
+	border-top-width: 0px !important;
+	border-bottom-width: 0px !important;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-right: 3px !important;
+	margin-left: 4px !important;
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+}
+.fc-event-container {
+	border-left-width: 0px !important;
+	border-right-width: 0px !important;
+	border-top-width: 0px !important;
+	border-bottom-width: 0px !important;
+	padding-left: 0px !important;;
+	padding-right: 0px !important;;
+	padding-top: 0px !important;;
+	padding-bottom: 0px !important;;
+	margin-right: 0px !important;
+	margin-left: 0px !important;
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+}
+
+
+/*Prevents the last event in a day for filling the rest of the day 100% on month view */
+
+.fc-event-container[rowspan] a {
+	height:auto;
+}
+
+/*adds vertical spacing. horizontal spacing has been set with margin above*/
+
+.fc-content-skeleton table {
+	border-collapse: separate !important;
+	border-spacing: 0px 6px !important;
+}
+
+/*removed padding from the bottom of the page*/
+
+.fc-content-skeleton {
+	Padding-bottom: 0px !important;
+}
+
+/*Stylised the day of the week bar*/
+
+.fc-head-container.fc-widget-header {
+	border-top-width: 0px;
+    border-left-width: 0px;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+	background-color:#f5f5f5
+}
+
+/*removes grid lines on month view*/
+
+.fc-widget-content, .fc-day-header {
+	border-top-width: 0px !important;
+    border-left-width: 0px!important;
+    border-bottom-width: 0px!important;
+    border-right-width: 0px !important;
+}
+
+/*Allows text to wrap so you can see the whole event title*/
+
+.fc-title {
+	white-space: normal;
+}
+
+/*adds padding around text in event blocks*/
+
+.fc-content {
+Padding:3px 3px 3px 3px}
+
+/*removes the yellow day highlight as the number is now bold*/
+
+.fc-unthemed td.fc-today {
+    background: #ffffff;
+}

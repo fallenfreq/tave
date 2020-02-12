@@ -1,0 +1,70 @@
+/*
+ONLY LOAD ON THESE PAGES
+https://tave.com/app/jobs/edit
+https://tave.com/app/jobs/forms/response/edit
+https://tave.com/app/jobs/orders/new/
+*/
+
+.missingNO {
+    background:#ffff99 !important;
+}
+
+/*Privacy Popup Css Start*/
+
+.missingPop {
+	z-index: 10000;
+  background:#f5f5f5;
+  max-width:300px;
+  height:auto;
+  padding:0px 40px 0px 40px;
+  position: fixed;
+  top:50px;
+  left: 50%;
+  margin-left: -150px; /* Negative half of width. */
+  text-align:center;
+  font-weight:300 !important;
+  font-size:15px !important;
+  line-height:150%;
+  font-family: "Source Sans Pro", "Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+
+ .closeX {
+  margin:7px -30px 20px auto;
+  width:20px;
+  font-weight:500 !important;
+  color:#444;
+  }
+
+.buttonOK {
+  margin:30px auto 20px auto;
+  width:100px;
+  height:40px;
+  font-weight:900 !important;
+  color:#444;
+  padding-top:9px;
+  background-color:#fff;
+}
+
+.buttonOK,
+.closeX{
+  display:block;
+  font-size:18px;
+  text-decoration:none;
+  font-family: "Source Sans Pro", "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+@media screen and (max-width:559px) {
+.missingPop {
+  max-width:100% !important;
+  width:auto !important;
+  right:30px !important;
+  left:30px !important;
+  top:30px !important;
+  margin-left:0px !important;
+  }
+}
+
+.hidePop {
+  display:none;
+}
+/*Privacy Popup Css end*/

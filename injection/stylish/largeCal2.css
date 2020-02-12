@@ -1,0 +1,30 @@
+/* ONLY LOAD ON THIS PATH https://tave.com/app/calendar/month*/
+
+/*Stops rows bunching up when pressing month view from week view*/
+
+.fc-row.fc-week.fc-widget-content {
+	min-height:200px !important;
+	height:auto !important;
+}
+
+/*makes calendar have responsive height on month view*/
+
+@media screen and (min-width:768px) {
+	.fc-scroller.fc-time-grid-container {
+		max-height: calc(100vh - 167px) !important;
+		min-height: calc(100vh - 167px) !important;
+	}
+}
+@media screen and (min-width:768px) {
+	.fc-scroller.fc-day-grid-container {
+		max-height: calc(100vh - 123px) !important;
+		min-height: calc(100vh - 123px) !important;
+	}
+}
+
+@media screen and (max-width:767px) {
+	.fc-scroller.fc-day-grid-container {
+		max-height: calc(100vh - 149px) !important;
+		min-height: calc(100vh - 149px) !important;
+	}
+}

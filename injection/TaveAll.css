@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/* Attempted call css start */
+
+
+#redactor-toolbar-1 span {
+  background-color: #FDB813;
+  padding: 5px 9px 5px 9px;
+  border-radius: 9px;
+}
+
+.timeStampBtn {
+	display: inline-block;
+	white-space : nowrap;
+	padding:10px 10px 3px 0px;
+}
+
+.timeStampBtn span {
+	padding: 4px 8px 4px 8px;
+	background-color: #FDB813;
+	border-radius: 9px;
+	color: #fff;
+}
+
+.stopWrap {
+	white-space : nowrap;
+	display: inline-block;
+}
+
+#ListTable .timeStampBtn span {
+	padding: 0px 6px !important;
+}
+
+.centered {
+  position: fixed;
+  top: 200px;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, 0px);
+  z-index:10000;
+}
+
+#fadeOut {
+	top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:rgba(0,0,0,0.5);
+	position: fixed;
+    z-index:10000;
+	
+
+	display:none;
+}
+
+#number {
+	width:50px;
+}
+
+#number, #filterType, #todFilter {
+	height: 28px;
+	border: 1px solid;
+	border-radius: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#priorityCodeBtn {
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	background-color: #FDB813;
+	border: 1px solid #DB9B01;
+	border-radius: 5px;
+	color: #fff;
+	margin-left: 30px;
+	padding: 20px;
+}
+
+/* Attempted call css end */
+
+
+

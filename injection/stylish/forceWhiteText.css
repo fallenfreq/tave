@@ -1,0 +1,82 @@
+/*White text on calendar month view*/
+
+.fc-content .fc-time,
+.fc-content .fc-title {
+	color: #ffffff !important;
+}
+
+/*White text on filters sidebar*/
+
+.checkbox label input + .label {
+	color: #ffffff !important;
+}
+
+/*White text on agenda event labels and numbers on dashboard cal */
+
+.details div .label,
+.day[style] {
+	color: #ffffff !important;
+}
+
+/*White numbers on 36 month cal*/
+
+#Content #AvailabilityBox .he {
+	color: #ffffff !important;
+}
+
+/*prevents border from overlapping next td on day indicated (Dashboard cal)*/
+
+.table-condensed {
+	border-collapse: separate !important;
+}
+
+/*styles today td on dashboard cal if there is an event*/
+
+td.today[style] {
+	outline: 0px solid #ffffff !important;
+	border-width: 2px !important;
+	border-color: #ffffff !important;
+	border-style: solid !important;
+	padding: 3px 3px 3px 3px !important;
+}
+
+/*styles today td on dashboard cal if there is no event*/
+
+td.today {
+	outline: 0px solid #ffffff !important;
+	border-width: 2px !important;
+	border-color: #000000 !important;
+	border-style: solid !important;
+	padding: 3px 3px 3px 3px !important;
+}
+
+/*styles today td if there is an event - on 36 month cal*/
+
+#Content #AvailabilityBox .cd.he {
+	outline: 0px solid #ffffff !important;
+	border-width: 1px !important;
+	border-color: #ffffff !important;
+	border-style: solid !important;
+	padding: 1px 0px 1px 0px;
+}
+
+/*styles today td if there is no event - on 36 month cal*/
+
+#Content #AvailabilityBox .cd {
+	outline: 0px solid #fff !important;
+	border-width: 1px !important;
+	border-color: #000000 !important;
+	border-style: solid !important;
+	padding: 1px 0px 1px 0px;
+}
+
+/*prevents border from overlaping next td on day indicater (36month cal) + keeps td sizes even*/
+
+.carousel .cal table {
+	table-layout: fixed;
+	border-collapse: separate !important;
+}
+#Content #AvailabilityBox .d {
+	box-sizing: content-box !important;
+	padding:2px 1px 2px 1px;
+}

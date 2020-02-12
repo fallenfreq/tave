@@ -1,0 +1,84 @@
+/*
+LOAD ON PAGES WITH
+https://tave.com/app/tasks
+https://tave.com/app/jobs/tasks
+*/
+
+/*Task Filter Start*/
+
+#filter {
+height:32.9px;
+}
+
+#btnWrap + div {
+	clear: both;
+	padding-top: 10px;
+	border-top:1px solid #eee
+}
+
+.task-lists {
+	clear: both;
+}
+
+.box > h2 {
+	width: calc(100vw - 160px - 505px) !important;
+	float: left;
+	margin: 0px 0px 0px 0px !important;
+	border-bottom:0px solid #eee !important;
+}
+.buttonOn,
+.buttonOff {
+	display: inline-block;
+	padding: 6px 12px 6px 12px;
+	cursor: pointer;
+	margin-right: 8px;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	color: white;
+}
+
+.filterBTN {
+margin-right:0px !important;
+}
+
+#btnWrap {
+	float: left;
+	margin: 0px 0px 0px 8px;
+	padding-bottom:13px;
+}
+.buttonOff {
+	background-color: #e3e3e3;
+}
+.buttonOff:hover {
+	background-color: #d8d8d8;
+}
+.buttonOn {
+	background-color: #3498db;
+}
+.buttonOn:hover {
+	background-color: #47a7e8;
+}
+.hideList {
+	Display: none;
+}
+.showList {
+	Display: block;
+}
+
+.filterOnly {
+  display:none !important;
+}
+
+#filter:focus {
+    outline-offset: 0px /*-2px*/
+}
+
+#filter:focus {
+    outline: -webkit-focus-ring-color auto 5px;
+    outline-color: -webkit-focus-ring-color;
+    outline-style: auto;
+    outline-width: 0px; /*5px*/
+}
+
+/*Task Filter End*/

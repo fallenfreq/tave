@@ -1,0 +1,153 @@
+
+/* ONLY LOAD ON THIS PATH https://tave.com/app/calendar/ */
+/*hides line around calendar container box*/
+
+#PageContainer > #Content > .box {
+	box-shadow: 0px 0px 0 rgba(0, 0, 0, .0);
+	border-radius: 10px;
+	padding: 0px 0px;
+	border: 0px solid #ddd!important
+}
+
+/*adds padding around the cal and cal navigation*/
+
+@media screen and (min-width:768px) {
+.cl-mcont.aside > .content {
+	padding: 20px 20px;
+	background-color: #ffffff;
+}
+}
+@media screen and (max-width:767px) {
+.cl-mcont.aside > .content {
+	padding: 10px 10px;
+	background-color: #ffffff;
+}
+}
+/*adds a shadow to define the top page nav tab*/
+
+#head-nav {
+	Background-color: #ffffff;
+	box-shadow: 0px 3px 3px #e6e6e6;
+}
+
+/*hides scroll bars*/
+
+body::-webkit-scrollbar,
+.fc-scroller.fc-day-grid-container::-webkit-scrollbar,
+.fc-scroller.fc-time-grid-container::-webkit-scrollbar {
+	display: none;
+}
+
+/*moves the head nav and side bar to give more room to the calendar then brings them back on hover*/
+
+#head-nav {
+	position: relative;
+	top: -49px;
+	margin-bottom: -49px;
+}
+#head-nav:hover {
+	position: relative;
+	top: 0px;
+	margin-bottom: 0px;
+}
+
+/*stops cal from fill the whole page while page-aside is set to absolute*/
+
+.cl-mcont.aside > .content {
+	max-width: calc(100% - 15px) !important;
+}
+
+/*stops page from scrolling to see the side nav whilst it is hidden*/
+
+/* NOT WORKING ANYMORE */
+
+.page-aside div.content {
+padding-left: 20px !important;
+}
+
+.page-aside {
+	/*
+	z-index:10;
+	position: absolute !important;
+	top: 0 !important;
+	bottom: 0 !important;
+	overflow: auto !important;
+	*/
+	right: -265px;
+	margin-left: -265px;
+}
+.page-aside:hover {
+	/*
+	position: relative !important;
+	overflow:visible !important;
+	*/
+	right: 0 !important;
+	margin-left: 0 !important;
+}
+
+.page-aside > div {
+width: 100%;
+}
+
+/*positions the popover box centre so it wont fall off to the right of the page*/
+
+
+.popover {
+	position: absolute !important;
+	top: 200px !important;
+	left: 0 !important;
+	right: 0 !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+
+/*removes arrow as it no longer points to correct event box*/
+
+.arrow {
+	display: none !important;
+}
+
+/*hides footer*/
+
+#Footer {
+	display: none;
+}
+
+/*margin to allow the calendar to scroll up past the last event box (might not be needed)*/
+
+#PageContainer > #Content > .box {
+	margin-bottom: 0px
+}
+
+/*change the day number and current day number styling*/
+
+.fc-day-number {
+	font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-size: 21px;
+}
+.fc-today .fc-day-number {
+	font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 900;
+	font-size: 21px;
+}
+
+.fc-today .fc-day-number::before {
+	content:"Today - ";
+}
+
+/*Stops sidebar braking when it moves under the calendar and allows calendar to fill the 15px on the right*/
+
+@media screen and (max-width:991px) {
+	.page-aside {
+		position: relative !important;
+	}
+	.cl-mcont.aside .content {
+		max-width: 100% !important;
+	}
+}
+
+/*Keeps the cal scrolling*/
+.fc-scroller {
+overflow-y: scroll !important;
+}

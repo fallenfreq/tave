@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<ul id="contactTimeBtn">
+  <li><a href="javascript:void(null);" alt="Morning" rel="Morning" class=" timeStampBtn re-button re-button-icon" role="button" tabindex="-1">Morning <span>0</span></a></li>
+  <li><a href="javascript:void(null);" alt="Afternoon" rel="Afternoon" class=" timeStampBtn re-button re-button-icon" role="button" tabindex="-1">Afternoon <span>0</span></a></li>
+  <li><a href="javascript:void(null);" alt="Evening" rel="Evening" class=" timeStampBtn re-button re-button-icon" role="button" tabindex="-1">Evening <span>0</span></a></li>
+  <li><a href="javascript:void(null);" alt="Saturday" rel="Saturday" class=" timeStampBtn re-button re-button-icon" role="button" tabindex="-1">Saturday <span>0</span></a></li>
+</ul>
+<div id="contactTimeView">
+  <div alt="Morning" class="timeStampBtn"  >Morning <span>0</span></div>
+  <div alt="Afternoon" class="timeStampBtn" >Afternoon <span>0</span></div>
+  <div alt="Evening" class="timeStampBtn" >Evening <span>0</span></div>
+  <div alt="Saturday" class="timeStampBtn" >Saturday <span>0</span></div>
+</div>
+
+<div id="SearchMenu" class="centered">
+<select id="todFilter" name="todFilter">
+<!--Menue added in JS from array-->
+</select>
+<select id="filterType" name="filterType">
+	<option value="priority">With priority</option>
+	<option value="notCalled">Not called at all</option>
+	<option value="priorityFrom">With priority from</option>
+	<option value="leastXTimes">Called at least X times</option>
+	<option value="xTimes">Called X times</option>
+</select>
+<input id="number" type="number" placeholder="00" min="1" max="4">
+<button id="priorityCodeBtn" type="button">Copy code to clipboard</button>
+	
+</div>	
+	
+</body>
+</html>

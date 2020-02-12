@@ -1,0 +1,111 @@
+body {
+  background-color:#eaeaea;
+}
+
+/* general styles */
+
+/* centers svg logo added to header with JS*/
+#Header {
+  text-align:center;
+  background-color:#1e1f26;
+}
+#Header .svgBox {
+  width:50%;
+  padding:40px;
+  display:inline-block;
+}
+#Header path {
+  fill:white;
+}
+
+.container {
+  width: 650px; /* 1170px is default */
+}
+
+/* contact form and questionnaire styles */
+
+.required label {
+  text-decoration: none !important;
+}
+
+.form-group {
+  margin:15px 0 30px 0;
+}
+
+.btn-default,
+.btn-brand {
+  background-color:#f9d400;
+  color:black !important;
+  border-color: rgba(68,68,68,0.25) !important
+}
+
+/* default on contact form brand else where */
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-brand:hover,
+.btn-brand:focus,
+.btn-brand:active {
+  background-color:#303133 !important;
+  /* for brand only to copy contact buttons */
+}
+
+input[type=radio]:checked::before {
+  color:#f9d400 !important;
+}
+
+/* input boxes */
+.form-control {
+  background-color: #eaeaea;
+  /* border: none; */
+}
+
+.questionnaire-edit-notice {
+  display:none;
+}
+
+/* my own class on icons I have added to a questionnaire */
+
+.socialIcons {
+  font-size:28px;
+}
+.socialIcons em {
+  padding:0 7px;
+  color:#444 !important;
+}
+.socialIcons em:hover {
+  color:#f9d400 !important;
+}
+
+/* styles for slider start */
+
+.slides {
+  display:none;
+}
+.slides:first-child {
+  display:block;
+}
+.slider img,
+.slider {
+  width:100%;
+}
+.slider img {
+  padding-bottom:20px;
+}
+.slider {
+  text-align: center;
+}
+.navNumbers,
+.navNumbers > div {
+  display:inline-block;
+}
+.navNumbers > div {
+  margin: 0 5px;
+  background-color:#eaeaea;
+}
+.navNumbers > .activeNumber {
+  color:white;
+  background-color:#1e1f26;
+}
+
+/* styles for slider end */
