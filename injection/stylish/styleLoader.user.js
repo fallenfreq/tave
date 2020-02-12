@@ -1,5 +1,13 @@
-// $.getScript('https://dl.dropboxusercontent.com/s/m9c0xfu5weds98b/TaveAll%202.js',function(){});
-// $.getScript('https://dl.dropboxusercontent.com/s/xzqv9e3g69vf572/styleLoader.js',function(){});
+// ==UserScript==
+// @name        Tave css
+// @namespace   Violentmonkey Scripts
+// @match       https://tave.com/app/*
+// @grant       none
+// @run-at      document-start
+// @version     1.0
+// @author      -
+// @description 12/02/2020, 20:30:08 adds new css to tave at start
+// ==/UserScript==
 
 const styleLoader = styleMap => {
   styleMap.forEach(pair => {
