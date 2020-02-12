@@ -1,6 +1,4 @@
 @charset "UTF-8";
-/* CSS Document */
-
 
 /* Attempted call css start */
 
@@ -50,7 +48,7 @@
     background:rgba(0,0,0,0.5);
 	position: fixed;
     z-index:10000;
-	
+
 
 	display:none;
 }
@@ -78,6 +76,3 @@
 }
 
 /* Attempted call css end */
-
-
-

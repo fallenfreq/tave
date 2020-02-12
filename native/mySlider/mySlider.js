@@ -43,7 +43,7 @@ const initSliders = function(slider) {
   }
   activeNum(0)
 
-/*------------- Would rather move this stuff out of here end --------------*/
+/*-------------- Would rather move this stuff out of here end --------------*/
 
   slider.addEventListener( "click", e => {
 
