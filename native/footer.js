@@ -70,3 +70,18 @@ if(onContactPage('52215c')) {
   })
 
 }
+
+// tests to see if you are on a page with a url that contains order/orderreceipt
+// you need to put a backslash before any forwards slashes in a url you are testing
+// and surround what you are testing with / /
+if( /order\/receipt/.test(window.location.href) ) {
+  var buttons = document.getElementsByClassName("btn")
+  ;[].forEach.call( buttons, function(button){
+    // Add the word you are looking to match currently testing Print
+    if( /Print/.test(button.textContent) ){
+      // currently it appends to the end of what is allready there
+      // remove button.textContent+ if you want to replace everything
+      button.textContent = button.textContent+" or Save"
+    }
+  })
+}
